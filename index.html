@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <nav class="Bandeau-navigation"> <!--Ceci est le bandeau de navigation intra site -->
-        <img src="./images/Icon&Logo/LogoBooki.png" alt="LogoBooki">
-        <a href="#">Hébergements</a>
-        <a href="#">Activités</a>
-    </nav>
     <header> <!--Ceci est la partie supérieur du site regroupant le titre et la recherche pour les utilisateurs-->
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-        <div class="champ-recherche">
+        <nav class="Bandeau-navigation"> <!--Ceci est le bandeau de navigation intra site -->
+            <img src="./images/Icon&Logo/LogoBooki.png" alt="LogoBooki">
+            <h1>Booki</h1>
+            <a href="#hébergements-et-populaire">Hébergements</a>
+            <a href="#Activités">Activités</a>
+        </nav>
+        <p> <span class="search-title">Trouvez votre hébergement pour des vacances de rêve </span> <br> 
+            En plein centre-ville ou en pleine nature</p>
+        <div class="champ-recherche"> <!--Zone de saisie pour la recherche des usagers-->
             <img src="./images/Icon&Logo/Vector.png" alt="">
             <form>
                 <label for="Ville">Ville</label>
@@ -33,34 +34,36 @@
             <h2>Filtres</h2>
             <ul class="button-filter">
                 <li><button type="button">
-                    <img src="./images/Icon&Logo/logo-billet.png" alt=""><span>Économique</span>
+                    <img src="./images/Icon&Logo/logo-billet.png" alt="Filtrez vos recherche en vous basant sur le prix"><span>Économique</span>
                 </button></li>
                 <li><button type="button">
-                    <img src="images/Icon&Logo/logo-familial.png" alt=""><span>Familial</span>
+                    <img src="images/Icon&Logo/logo-familial.png" alt="Recherchez des logements familiaux"><span>Familial</span>
                 </button></li>
                 <li><button type="button">
-                    <img src="images/Icon&Logo/logo-coeur.png" alt=""><span>Romantique</span>
+                    <img src="images/Icon&Logo/logo-coeur.png" alt="Recherhez des logements romantiques"><span>Romantique</span>
                 </button></li>
                 <li><button type="button">
-                    <img src="images/Icon&Logo/logo-pépite.png" alt=""><span>Nos pépites</span>
+                    <img src="images/Icon&Logo/logo-pépite.png" alt="Découvrez nos logement coup de coeur"><span>Nos pépites</span>
                 </button></li>
             </ul>
         </div>
-        <div class="information">
-        <img src="./images/Icon&Logo/logo-info.png" alt="information">
-        <span>Plus de logements sont disponibles dans cette ville</span>
-        </div>
     </header>
     <main>
-        <div class="hébergements-et-populaire"> <!--Ceci est la partie affichant les résultats de recherche des utilisateurs en deux partie hébergements et hébergements_populaires-->
+        <div class="popup-info">
+            <img src="./images/Icon&Logo/logo-info.png" alt="information sur le nombre de logement dans la ville">
+            <span>Plus de logements sont disponibles dans cette ville</span>
+        </div>
+        <div id="hébergements-et-populaire"> <!--Ceci est la partie affichant les résultats de recherche des utilisateurs en deux partie hébergements et hébergements_populaires-->
             <section class="hébergement"><!--Affichage des hébergements photos/prix/notes-->
+                <div class="titre_section_hébergement">
                 <h2>Hébergements à Marseille</h2>
+                </div>
                 <div class="cardsH">
                     <a href="#">
                         <article class="cardH">
-                            <img src="./images/hébergements/Hôtel-du-port.jpg" alt="Hôtel-du-port">
+                            <img src="./images/hébergements/Hôtel-du-port.jpg" alt="Découvrez l'Hôtel-du-port">
                             <h3>Hôtel du port</h3>
-                            <p>Nuit à partir de 52€</p>
+                            <p>Nuit à partir de 52<span class="euro">€</span></p>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -73,9 +76,9 @@
                     </a>
                     <a href="#">
                         <article class="cardH">
-                            <img src="./images/hébergements/Hôtel-Chez-Amina.jpg" alt="Hôtel Chez Amina">
+                            <img src="./images/hébergements/Hôtel-Chez-Amina.jpg" alt="Découvrez l'Hôtel Chez Amina">
                             <h3>Hôtel Chez Amina</h3>
-                            <p>Nuit à partir de 96€</p>
+                            <p>Nuit à partir de 96<span class="euro">€</span></p>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -88,9 +91,9 @@
                     </a>
                     <a href="#">
                         <article class="cardH">
-                            <img src="./images/hébergements/Hôtel-Les-mouettes.jpg" alt="Hôtel Les mouettes">
+                            <img src="./images/hébergements/Hôtel-Les-mouettes.jpg" alt="Découvrez l'Hôtel Les mouettes">
                             <h3>Hôtel Les mouettes</h3>
-                            <p>Nuit à partir de 76€</p>
+                            <p>Nuit à partir de 76<span class="euro">€</span></p>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -103,9 +106,9 @@
                     </a>
                     <a href="#">
                         <article class="cardH">
-                            <img src="./images/hébergements/Hôtel-de-la-mer.jpg" alt="Hôtel de la mer">
+                            <img src="./images/hébergements/Hôtel-de-la-mer.jpg" alt="Découvrez l'Hôtel de la mer">
                             <h3>Hôtel de la mer</h3>
-                            <p>Nuit à partir de 46€</p>
+                            <p>Nuit à partir de 46<span class="euro">€</span></p>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -118,9 +121,9 @@
                     </a>
                     <a href="#">
                         <article class="cardH">
-                            <img src="./images/hébergements/Auberge-La-Cannebière.jpg" alt="Auberge La Cannebière">
+                            <img src="./images/hébergements/Auberge-La-Cannebière.jpg" alt="Découvrez l'Auberge La Cannebière">
                             <h3>Auberge La Cannebière</h3>
-                            <p>Nuit à partir de 25€</p>
+                            <p>Nuit à partir de 25<span class="euro">€</span></p>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -133,9 +136,9 @@
                     </a>
                     <a href="#">
                         <article class="cardH">
-                            <img src="./images/hébergements/Auberge-Le-Panier.jpg" alt="Auberge Le Panier">
+                            <img src="./images/hébergements/Auberge-Le-Panier.jpg" alt="Découvrez l'Auberge Le Panier">
                             <h3>Auberge Le Panier</h3>
-                            <p>Nuit à partir de 23€</p>
+                            <p>Nuit à partir de 23<span class="euro">€</span></p>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -147,10 +150,14 @@
                         </article>
                     </a>
                 </div>
-                <p>Afficher plus</p>
+                <div class="supplément_section_hébergement">
+                    <a href="">
+                        <p>Afficher plus</p>
+                    </a>
+                </div>
             </section>
             <section class="populaire"><!--Affichage des hébergements_populaires photos/prix/notes-->
-                <div class="titre-cards-populaires">
+                <div class="titre_section_populaire">
                     <h2>Les plus populaires</h2>
                     <img src="./images/Icon&Logo/logo-popu.png" alt="">
                 </div>
@@ -159,7 +166,7 @@
                         <img src="./images/populaires/Hôtel-Le-Soleil-du-matin.jpg" alt="Hôtel Le soleil du matin">
                         <div class="cardP-txt">
                             <h3>Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de 25€</p>
+                            <p>Nuit à partir de 25<span class="euro">€</span></p>
                         </div>
                         <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -176,7 +183,7 @@
                         <img src="./images/populaires/Chambres-d'hotes-Au-coeur-de-l'eau.jpg" alt="Chambre d'hôtes Au cœur de l'eau">
                         <div class="cardP-txt">
                             <h3>Chambre d'hôtes Au cœur de l'eau</h3>
-                            <p>Nuit à partir de 71€</p>
+                            <p>Nuit à partir de 71<span class="euro">€</span></p>
                         </div>
                         <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -193,7 +200,7 @@
                         <img src="./images/populaires/Hôtel-Bleu-et-Blanc.jpg" alt="Hôtel Bleu et Blanc">
                         <div class="cardP-txt">
                             <h3>Hôtel Bleu et Blanc</h3>
-                            <p>Nuit à partir de 68€</p>
+                            <p>Nuit à partir de 68<span class="euro">€</span></p>
                         </div>
                         <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -207,8 +214,10 @@
                 </a>
             </section>
         </div>
-        <section class="Activités"><!--Affichage des activités proches du lieu recherché par l'utilisateur-->
+        <section id="Activités"><!--Affichage des activités proches du lieu recherché par l'utilisateur-->
+            <div class="titre_section_activités">
             <h2>Activités à Marseille</h2>
+            </div>
             <a href="#">
                 <article class="cardA">
                     <img src="./images/activités/Vieux-Port.jpg" alt="Vieux-Port">
