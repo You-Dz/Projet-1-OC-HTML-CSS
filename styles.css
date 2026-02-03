@@ -1,0 +1,268 @@
+* {
+     font-family: 'Raleway', sans-serif;
+     color: black;
+}
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+header{
+    margin: 30px 0px;
+}
+main{
+    margin-top: 35px;
+}
+nav.Bandeau-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.invisible{
+    font-size: 19px;
+    display: none;
+}
+#logo_titre {
+    display: flex;
+    align-items: center;
+}
+
+#liens_nav {
+    gap: 68px;
+    display: flex;
+    gap: 8px;
+}
+#liens_nav a:hover {
+    border-top: 2px solid #0065fc;
+    padding-top: 14px;
+}
+a {
+    font-size: 16px;
+    text-decoration: none;
+}
+a:hover {
+    color: #0065fc;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+p {
+    font-size: 16px;
+}
+
+.fa-solid {
+    color: #0065FC;
+}
+.neutral-star {
+    color: #F2F2F2;
+}
+/*Règle FORMULAIRE*/
+.search-title{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+.champ-recherche {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+.champ-recherche form {
+    display:flex;
+    color: black;
+}
+#fond_search_logo{
+    background-color:#F2F2F2;
+    height:49px;
+    width:50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius:15px 0px 0px 15px;
+}
+#search_logo{
+    height: 18px;
+    width: 14px;
+}
+#ville {
+    height: 49px;
+    border: 1px solid #F2F2F2;
+    padding: 0 16px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none; /*cmd permettant de supprimer l'encadrement par défaut lors de la seletion du champ*/
+}
+.champ-recherche button {
+    height: 49px;
+    gap:10px;
+    background-color: #0065fc;
+    color: white;
+    font-size: 18px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0px 15px;
+    border: none;
+}
+
+/*Règle FILTRES*/
+.filtres {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap:15px;
+    margin-top: 35px;
+}
+
+.button-filter {
+    display: flex;
+    gap: 15px;
+}
+.button-filter button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    font-size: 17px;
+    border: solid 2px #d9d9d9;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+}
+.icon {
+    height: 22px;
+    width: 22px;
+}
+.popup-info {
+    margin-bottom: 35px;
+}
+
+/*Règles SECTION HEBERGEMENT + POPULAIRE*/
+.hebergement, .populaire{
+    background-color:#F2F2F2 ;
+    border-radius: 20px 20px 20px 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.hebergement{
+    width: 65%;
+}
+.populaire {
+    width: 32%;
+}
+#hebergements-et-populaire{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Partie Gérant les cartes Hébergements*/
+.cardsH {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 30px;
+}
+.cardH {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.txt-H {
+    margin-left: 15px ;
+    margin-right: 15px;
+}
+.supplement_section_hebergement {
+    font-size: 18px;
+    font-weight: 700;
+}
+.cardH img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/*Partie Gérant les cartes Populaires*/
+.populaire {
+    display: flex;
+    flex-direction: column;
+    gap:30px
+}
+.titre_section_populaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#icon-popu {
+    width: 18px;
+    height: 15.75px;
+}
+.cardP img {
+    width: 30%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 0px 0px 20px;
+}
+.cardP {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    display: flex;
+}
+.cardP-txt {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 5px 5px 15px;
+}
+
+/*Partie Gérant les cartes Activités*/
+.ensemble_card_acti{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.cardA img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px ;
+}
+.cardA {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.cardA h4 {
+    padding: 10px 19px;
+}
+
+/*Partie gérant le footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    margin: 0px;
+}
+ul{
+    list-style: none;
+}
+.blockfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
