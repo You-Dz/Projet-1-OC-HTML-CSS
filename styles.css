@@ -1,10 +1,9 @@
-* {
-     font-family: 'Raleway', sans-serif;
-     color: black;
-}
+
 body {
-    margin-left: 50px;
-    margin-right: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin: 0px 50px;
+    max-width: 1440px;
 }
 header{
     margin: 30px 0px;
@@ -12,32 +11,16 @@ header{
 main{
     margin-top: 35px;
 }
-nav.Bandeau-navigation {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
+
 .invisible{
     font-size: 19px;
     display: none;
 }
-#logo_titre {
-    display: flex;
-    align-items: center;
-}
 
-#liens_nav {
-    gap: 68px;
-    display: flex;
-    gap: 8px;
-}
-#liens_nav a:hover {
-    border-top: 2px solid #0065fc;
-    padding-top: 14px;
-}
 a {
     font-size: 16px;
     text-decoration: none;
+    color: black;
 }
 a:hover {
     color: #0065fc;
@@ -58,12 +41,41 @@ p {
     font-size: 16px;
 }
 
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0%;
+}
 .fa-solid {
     color: #0065FC;
 }
 .neutral-star {
     color: #F2F2F2;
 }
+/*Règles nav*/
+nav.Bandeau-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#logo_titre {
+    display: flex;
+    align-items: center;
+}
+#liens_nav {
+    display: flex;
+    gap: 8px;
+}
+#liens_nav a{
+    padding-top: 14px;
+    border-top: 2px solid transparent;
+}
+#liens_nav a:hover {
+    border-top: 2px solid #0065fc;
+    cursor: url("./images/Icon&Logo/curseur.png"), auto;
+}
+
 /*Règle FORMULAIRE*/
 .search-title{
     font-size: 22px;
@@ -101,6 +113,10 @@ p {
     font-weight: 700;
     outline: none; /*cmd permettant de supprimer l'encadrement par défaut lors de la seletion du champ*/
 }
+#ville::placeholder {
+    color:black;
+    opacity: 1;
+}
 .champ-recherche button {
     height: 49px;
     gap:10px;
@@ -137,6 +153,10 @@ p {
     padding: 10px 20px 10px 20px;
     background-color: white;
 }
+.button-filter button:hover {
+    background-color: #deebff;
+    cursor: url("./images/Icon&Logo/curseur.png"), auto;
+}
 .icon {
     height: 22px;
     width: 22px;
@@ -170,6 +190,7 @@ p {
     gap: 30px;
     grid-auto-rows: minmax(100px, auto);
     margin: 30px;
+    align-items: center;
 }
 .cardH {
     background-color: white;
@@ -257,12 +278,35 @@ footer{
     align-items: center;
     background-color: #F2F2F2;
     margin: 0px;
+    justify-content: space-between;
+    padding: 0px 35px;
 }
-ul{
-    list-style: none;
-}
+
 .blockfooter {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.blockfooter ul li {
+    padding-bottom:15px ;
+}
+
+/*PARTIE RESPONSIVE*/
+
+/*Tablette >=768px et <1024px*/
+@media  screen and (max-width:1024px) {
+    #hebergements-et-populaire{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
+.cardsP {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.hebergement{
+    width: 100%;
+}
 }
