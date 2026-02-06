@@ -358,6 +358,10 @@ footer{
     align-items: center;
     width: 100%;
 }
+.populaire a {
+    width:33%;
+    box-sizing: border-box;
+}
 .filtres {
     display: flex;
     flex-direction: column;
@@ -416,5 +420,19 @@ footer{
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px ;
+}
+.Bandeau-navigation {
+    flex-direction: column;
+    align-items: center;
+}
+#liens_nav a{
+    padding-top: 0;
+    padding-bottom: 14px;
+    border-bottom: 2px solid transparent;
+}
+#liens_nav a:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: 2px solid transparent;
+    cursor: url("./images/Icon&Logo/curseur.png"), auto;
 }
 }
