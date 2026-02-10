@@ -52,9 +52,13 @@ ul{
     padding: 0px;
     margin: 0%;
 }
+/* Style de la librairie FontAwesome*/
 .fa-solid {
     color: #0065FC;
 }
+
+.fa-magnifying-glass {color: white;}
+
 .neutral-star {
     color: #F2F2F2;
 }
@@ -122,6 +126,9 @@ nav.Bandeau-navigation {
 #ville::placeholder {
     color:black;
     opacity: 1;
+}
+.fa-magnifying-glass {
+    display: none;
 }
 .champ-recherche button {
     height: 49px;
@@ -341,7 +348,15 @@ footer{
 
 /*Tablette >=768px et <1024px*/
 @media (min-width: 768px) and (max-width: 1024px) {
-    #hebergements-et-populaire{
+    
+    /*Règles Filtres et ses Boutons Tablette*/
+.filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+    /*Règles section hébergement et populaire Tablette*/
+#hebergements-et-populaire{
     display: flex;
     flex-direction: column;
     gap:50px;
@@ -362,35 +377,41 @@ footer{
     width:33%;
     box-sizing: border-box;
 }
-.filtres {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
-}
+
 /*Mobile <768px et >320px */
 @media (min-width: 320px) and (max-width: 768px) {
-    #hebergements-et-populaire {
-        flex-direction: column;
-    }
-    .populaire {
-        order:0;
-        width:100%;
-        border-radius: 0px;
-    }
-    .hebergement {
-        order:1;
-        width: 100%;
-        background-color: white;
-    }
-    .cardsH {
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 30px;
-    grid-auto-rows: minmax(100px, auto);
-    margin: 30px;
-    align-items: start;
+    /*Règles Bandeau Navigation Mobile*/
+.Bandeau-navigation {
+    flex-direction: column;
+    align-items: center;
 }
+#liens_nav {
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: solid 2px #F2F2F2;
+}
+#liens_nav a{
+    padding-top: 0;
+    padding-bottom: 14px;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    flex: 1; /*Raccourci de trois propriétés flex-grow(grandit ou non)  flex-shrink(rétrécit ou non) et flex-basis(taille de base) 
+    (ici dire 1 revient à dire 1 1 0) = grandit(et partage l'espace) , rétrécit on ignore la taille du contenu tout est ègale */
+}
+#liens_nav a:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: 2px solid transparent;
+    cursor: url("./images/Icon&Logo/curseur.png"), auto;
+}
+    /*Règles Champ de Recherche Mobile*/
+.btnSearchTXT {
+    display: none;
+}
+.fa-magnifying-glass{
+    display: inline-block;
+}
+    /*Règles Filtres et ses Boutons Mobile*/
 .filtres {
     display: flex;
     flex-direction: column;
@@ -411,6 +432,29 @@ footer{
     justify-content: center;
     box-sizing: border-box;
 }
+    /*Règles section hébergement et populaire Mobile*/
+#hebergements-et-populaire {
+        flex-direction: column;
+}
+.populaire {
+        order:0;
+        width:100%;
+        border-radius: 0px;
+}
+.hebergement {
+        order:1;
+        width: 100%;
+        background-color: white;
+}
+.cardsH {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 30px;
+    align-items: start;
+}
+    /*Règles Activités Mobile*/
 .ensemble_card_acti{
     display:flex;
     flex-direction: column;
@@ -421,18 +465,14 @@ footer{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px ;
 }
-.Bandeau-navigation {
+
+.main-container {
+    padding: 0;
+}
+    /*Règles Footer Mobile*/
+footer {
     flex-direction: column;
-    align-items: center;
-}
-#liens_nav a{
-    padding-top: 0;
-    padding-bottom: 14px;
-    border-bottom: 2px solid transparent;
-}
-#liens_nav a:hover {
-    border-bottom: 2px solid #0065fc;
-    border-top: 2px solid transparent;
-    cursor: url("./images/Icon&Logo/curseur.png"), auto;
+    align-items: flex-start;
+    margin: 0;
 }
 }
