@@ -34,6 +34,7 @@ a:hover {
 h2 {
     font-size: 22px;
     font-weight: 700;
+    margin: 0;
 }
 h3 {
     font-size: 18px;
@@ -42,9 +43,12 @@ h3 {
 h4 {
     font-size: 16px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 5px;
 }
 p {
     font-size: 16px;
+    margin: 0;
 }
 
 ul{
@@ -55,8 +59,21 @@ ul{
 /* Style de la librairie FontAwesome*/
 .fa-solid {
     color: #0065FC;
+    font-size: 22px;
 }
-
+.fa-info {
+    font-size: 14px;
+    border: solid 2px #d9d9d9;
+    padding: 7px 10px; 
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    margin-right: 10px;
+}
+.fa-xs {
+    font-size: 14px;
+}
+.fa-chart-line {
+    font-size: 18px;
+}
 .fa-magnifying-glass {color: white;}
 
 .neutral-star {
@@ -67,6 +84,7 @@ nav.Bandeau-navigation {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    margin-bottom: 30px;
 }
 
 #logo_titre {
@@ -90,7 +108,7 @@ nav.Bandeau-navigation {
 .search-title{
     font-size: 22px;
     font-weight: 700;
-    margin-top: 35px;
+    margin-bottom: 8px;
 }
 .champ-recherche {
     display: flex;
@@ -137,7 +155,6 @@ nav.Bandeau-navigation {
     color: white;
     font-size: 18px;
     border-radius: 0px 15px 15px 0px;
-    font-size: 18px;
     font-weight: 700;
     padding: 0px 15px;
     border: none;
@@ -171,10 +188,6 @@ nav.Bandeau-navigation {
     background-color: #deebff;
     cursor: url("./images/Icon&Logo/curseur.png"), auto;
 }
-.icon {
-    height: 22px;
-    width: 22px;
-}
 .popup-info {
     margin-bottom: 35px;
 }
@@ -182,7 +195,7 @@ nav.Bandeau-navigation {
 /*Règles SECTION HEBERGEMENT + POPULAIRE*/
 .hebergement, .populaire{
     background-color:#F2F2F2 ;
-    border-radius: 20px 20px 20px 20px;
+    border-radius:20px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -195,7 +208,7 @@ nav.Bandeau-navigation {
 #hebergements-et-populaire{
     display: flex;
     justify-content: space-between;
-       margin-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 /*Partie Gérant les cartes Hébergements*/
@@ -204,7 +217,7 @@ nav.Bandeau-navigation {
     grid-template-columns:1fr 1fr 1fr;
     gap: 30px;
     grid-auto-rows: minmax(100px, auto);
-    margin: 30px;
+    margin: 30px 0px;
     align-items: start;
 }
 .cardH {
@@ -254,10 +267,6 @@ nav.Bandeau-navigation {
     justify-content: space-between;
     align-items: center;
 }
-#icon-popu {
-    width: 18px;
-    height: 15.75px;
-}
 .cardsP {
     display: flex;
     flex-direction: column;
@@ -267,7 +276,7 @@ nav.Bandeau-navigation {
 }
 .cardP img {
     width: 33%;
-    height: 136px;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
@@ -281,23 +290,15 @@ nav.Bandeau-navigation {
     align-items: center;
 }
 .cardP-txt {
+    height: 100%;
     width: 67%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 15px;
     box-sizing: border-box;
+    margin: 10px 5px 5px 15px;
 }
-.card-rating {
-    margin-bottom: 5px;
-}
-.card-txt h4 {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-.cardP-txt p {
-    margin: 0;
-}
+
 
 /*Partie Gérant les cartes Activités*/
 #Activites {
@@ -307,6 +308,7 @@ nav.Bandeau-navigation {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
+    margin-top: 30px;
 }
 .cardA img {
     width: 100%;
