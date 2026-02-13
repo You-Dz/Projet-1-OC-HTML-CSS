@@ -2,30 +2,19 @@
 body {
     display: flex;
     justify-content: center;
+    margin:0;
+    padding: 0;
 }
 .main-container{
     font-family: 'Raleway', sans-serif;
     color: black;
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0px 50px 0px 50px;
     box-sizing: border-box;
-}
-header{
-    margin: 30px 0px;
 }
 main{
     margin-top: 35px;
-}
-
-.invisible{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: inset(50%);
 }
 
 a {
@@ -67,9 +56,13 @@ ul{
     font-size: 22px;
 }
 .fa-info {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
     font-size: 14px;
-    border: solid 2px #d9d9d9;
-    padding: 7px 10px; 
+    border: solid 1px #d9d9d9;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -91,10 +84,14 @@ nav.Bandeau-navigation {
     gap: 10px;
     margin-bottom: 30px;
 }
-
+#logo {
+    height: 19px;
+    width: 61px;
+}
 #logo_titre {
     display: flex;
     align-items: center;
+    padding-top: 14px;
 }
 #liens_nav {
     display: flex;
@@ -106,7 +103,6 @@ nav.Bandeau-navigation {
 }
 #liens_nav a:hover {
     border-top: 2px solid #0065fc;
-    cursor: url("./images/Icon&Logo/curseur.png"), auto;
 }
 
 /*Règle FORMULAIRE*/
@@ -144,7 +140,6 @@ nav.Bandeau-navigation {
     color: black;
     font-size: 18px;
     font-weight: 700;
-    outline: none; /*cmd permettant de supprimer l'encadrement par défaut lors de la seletion du champ*/
 }
 #ville::placeholder {
     color:black;
@@ -191,7 +186,6 @@ nav.Bandeau-navigation {
 }
 .button-filter button:hover {
     background-color: #deebff;
-    cursor: url("./images/Icon&Logo/curseur.png"), auto;
 }
 .popup-info {
     margin-bottom: 35px;
@@ -397,19 +391,27 @@ footer{
     width: 100%;
     justify-content: space-between;
     border-bottom: solid 2px #F2F2F2;
+
 }
 #liens_nav a{
     padding-top: 0;
     padding-bottom: 14px;
-    border-bottom: 2px solid transparent;
     text-align: center;
     flex: 1; /*Raccourci de trois propriétés flex-grow(grandit ou non)  flex-shrink(rétrécit ou non) et flex-basis(taille de base) 
     (ici dire 1 revient à dire 1 1 0) = grandit(et partage l'espace) , rétrécit on ignore la taille du contenu tout est ègale */
+    position: relative;
 }
 #liens_nav a:hover {
-    border-bottom: 2px solid #0065fc;
     border-top: 2px solid transparent;
-    cursor: url("./images/Icon&Logo/curseur.png"), auto;
+}
+#liens_nav a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #0065fc;
 }
     /*Règles Champ de Recherche Mobile*/
 .btnSearchTXT {
@@ -474,7 +476,13 @@ footer{
 }
 
 .main-container {
-    padding: 0;
+    padding: 0px;
+}
+.section_header {
+    padding: 10px 10px 0px 10px;
+}
+.popup-info {
+    padding: 0px 10px;
 }
     /*Règles Footer Mobile*/
 footer {

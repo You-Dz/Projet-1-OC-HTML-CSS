@@ -15,46 +15,48 @@
 <body>
     <div class="main-container">
         <header> <!--Ceci est la partie supérieur du site regroupant le titre et la recherche pour les utilisateurs-->
-            <nav class="Bandeau-navigation"> <!--Ceci est le bandeau de navigation intra site -->
-                <div id="logo_titre">
-                    <img src="./images/Icon&Logo/LogoBooki.png" alt="LogoBooki" width="61.09px" height="19px" id="logo">
-                    <h1 class="invisible">Booki</h1>
+            <div class="section_header">
+                <nav class="Bandeau-navigation"> <!--Ceci est le bandeau de navigation intra site -->
+                    <div id="logo_titre">
+                        <img src="./images/Icon&Logo/LogoBooki.png" alt="LogoBooki" id="logo">
+                        <h1 hidden>Booki</h1>
+                    </div>
+                    <div id="liens_nav">
+                        <a href="#hebergements-et-populaire">Hébergements</a>
+                        <a href="#Activites">Activités</a>
+                    </div>
+                </nav>
+                <p class="search-title">Trouvez votre hébergement pour des vacances de rêve</p>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <div class="champ-recherche"> <!--Zone de saisie pour la recherche des usagers-->
+                    <div id="fond_search_logo">
+                        <img src="./images/Icon&Logo/Vector.png" alt="" id="search_logo">
+                    </div>
+                    <form>
+                        <label hidden for="ville">Ville</label>
+                        <input type="text" name="ville" id="ville" placeholder="Marseille,France">
+                        <button type="submit"><span class="btnSearchTXT">Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
-                <div id="liens_nav">
-                    <a href="#hebergements-et-populaire">Hébergements</a>
-                    <a href="#Activites">Activités</a>
+                <div class="filtres"> <!--Zone de sélection de filtres pour la recherche utilisateur-->
+                    <div class="titre_filtres">
+                        <h3>Filtres</h3>
+                    </div>
+                    <ul class="button-filter">
+                        <li><button type="button">
+                            <i class="fa-solid fa-money-bill-wave"></i><span>Économique</span>
+                        </button></li>
+                        <li><button type="button">
+                            <i class="fa-solid fa-person"></i><span>Familial</span>
+                        </button></li>
+                        <li><button type="button">
+                            <i class="fa-solid fa-heart"></i><span>Romantique</span>
+                        </button></li>
+                        <li><button type="button">
+                            <i class="fa-solid fa-fire"></i><span>Nos pépites</span>
+                        </button></li>
+                    </ul>
                 </div>
-            </nav>
-            <p class="search-title">Trouvez votre hébergement pour des vacances de rêve</p>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <div class="champ-recherche"> <!--Zone de saisie pour la recherche des usagers-->
-                <div id="fond_search_logo">
-                    <img src="./images/Icon&Logo/Vector.png" alt="" id="search_logo">
-                </div>
-                <form>
-                    <label for="ville" class="invisible">Ville</label>
-                    <input type="text" name="ville" id="ville" placeholder="Marseille,France">
-                    <button type="submit"><span class="btnSearchTXT">Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
-            <div class="filtres"> <!--Zone de sélection de filtres pour la recherche utilisateur-->
-                <div class="titre_filtres">
-                    <h3>Filtres</h3>
-                </div>
-                <ul class="button-filter">
-                    <li><button type="button">
-                        <i class="fa-solid fa-money-bill-wave"></i><span>Économique</span>
-                    </button></li>
-                    <li><button type="button">
-                        <i class="fa-solid fa-person"></i><span>Familial</span>
-                    </button></li>
-                    <li><button type="button">
-                        <i class="fa-solid fa-heart"></i><span>Romantique</span>
-                    </button></li>
-                    <li><button type="button">
-                        <i class="fa-solid fa-fire"></i><span>Nos pépites</span>
-                    </button></li>
-                </ul>
             </div>
         </header>
         <main>
