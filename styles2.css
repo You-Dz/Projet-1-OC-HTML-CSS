@@ -94,7 +94,6 @@ ul{
 }
 .header_form form { /*Permet de supprimer l'espace entre le champ de saisi et le bouton du form */
     display: flex;
-    flex: 1; /* prend tout l'espace restant */
 }
 .header_form_logo {
     background-color:#F2F2F2;
