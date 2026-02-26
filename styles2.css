@@ -1,5 +1,5 @@
-
-h4, h2,h3, p {
+/*General rules */
+.section_title, .undertitle, .footer_block_title, .main_card_title, .standard_text {
     margin: 0;
 }
 body {
