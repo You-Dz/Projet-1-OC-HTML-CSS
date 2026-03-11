@@ -354,7 +354,7 @@ footer {
     }
 }
 /*Mobile <768px et >320px */
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
 
     .global-container {
         padding: 0;
@@ -437,6 +437,12 @@ footer {
             order:0;
             width:100%;
             border-radius: 0px;
+    }
+    .main_flex {
+        flex-direction: column;
+    }
+    .main_flex .links_card {
+    width: 100%;
     }
     .main_container_grid {
             order:1;
