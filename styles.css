@@ -53,6 +53,7 @@ ul{
     color: black;
 }
 /*Règles header*/
+/*Bandeau de navigation */
 .header_nav {
     display: flex;
     justify-content: space-between;
@@ -80,6 +81,7 @@ ul{
 .header_nav_links:hover {
     border-top: 2px solid #0065fc;
 }
+/*Texte et Formulaire*/
 .header_p {
     font-size: 22px;
     font-weight: 700;
@@ -129,6 +131,7 @@ ul{
     border: none;
     flex-shrink: 0;
 }
+/*Règles Boutons de filtre */
 .header_filter {
     display: flex;
     align-items: center;
@@ -152,7 +155,7 @@ ul{
     border: solid 2px #d9d9d9;
     padding: 10px 20px 10px 20px;
     background-color: white;
-    transition: background-color 0,5s;
+    transition: background-color 0.5s;
 }
 .header_filter_button:hover {
     background-color: #deebff;
@@ -162,39 +165,39 @@ ul{
     font-size: 16px;
     margin-bottom: 35px;
 }
-/*Rules Main Section*/
-.body_main {
+/*Rules Main Section Hébergements+Populaires*/
+.main_row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
 }
-.body_main_container_grid, .body_main_container_flex {
+.main_container_grid, .main_container_flex {
     background-color:#F2F2F2 ;
     border-radius:20px;
     padding: 30px;
     box-sizing: border-box;
 }
-.body_main_container_grid {
+.main_container_grid {
     width: 65%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.body_main_container_flex {
+.main_container_flex {
     width: 32%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-/* Grid Rules */
-.body_main_grid {
+/* Grid Rules  Règles section Hébergements*/
+.main_grid {
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     gap: 30px;
     grid-auto-rows: minmax(100px, auto);
     align-items: start;
 }
-.body_main_grid_card {
+.main_grid_card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -204,39 +207,39 @@ ul{
     flex-direction: column;
     text-decoration: none;
 }
-.body_main_grid_img {
+.main_grid_img {
     width: 100%;
     height: 50%;
     aspect-ratio: 4/2;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.body_main_grid_card_text {
+.main_grid_card_text {
     margin-left: 15px ;
     margin-right: 15px;
     box-sizing: border-box;
 }
-.body_main_grid_card_text h4 {
+.main_grid_card_text h4 {
     margin-top: 8px;
     margin-bottom: 0px;
 }
-.body_main_grid_card_text p {
+.main_grid_card_text p {
     margin-top: 8px;
     margin-bottom: 8px;    
 }
-.body_main_grid_footer_text {
+.main_grid_footer_text {
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight:700 ;
 }
-/*flex rules*/
-.body_main_flex {
+/*flex rules Règles section Populaires*/
+.main_flex {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.body_main_flex_card {
+.main_flex_card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -245,18 +248,18 @@ ul{
     height: 146px;
     align-items: center;
 }
-.body_main_flex_title {
+.main_flex_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.body_main_flex_img {
+.main_flex_img {
     width: 33%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
-.body_main_flex_card_text {
+.main_flex_card_text {
     height: 100%;
     width: 67%;
     display:flex;
@@ -265,39 +268,40 @@ ul{
     box-sizing: border-box;
     margin: 10px 5px 5px 15px;
 }
-.body_main_flex_card_text h4 {
+.main_flex_card_text h4 {
     margin-top: 8px;
     margin-bottom: 0px;
 }
-.body_main_flex_card_text p {
+.main_flex_card_text p {
     margin-top: 8px;
     margin-bottom: 8px; 
 }
-/*Zone Activités */
-.body_alt {
+/*Alt Rules Règles section activités */
+.main_alt {
     margin: 30px;
 }
-.body_alt_container {
+.main_alt_container {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     margin-top: 30px;
 }
-.body_alt_card {
+.main_alt_card {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-.body_alt_img {
+.main_alt_img {
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px ;
 }
-.body_alt_text {
+.main_alt_text {
     padding: 20px 19px;
     margin: 0;
 }
+/*Règles Footer*/
 .footer {
     display: flex;
     align-items: stretch;
@@ -328,24 +332,24 @@ ul{
         align-items: flex-start;
     }
 /*Règles section hébergement et populaire Tablette*/
-    .body_main{
+    .main_row{
         display: flex;
         flex-direction: column;
         gap:50px;
     }
-    .body_main_container_flex {
+    .main_container_flex {
         width: 100%;
     }
-    .body_main_container_grid {
+    .main_container_grid {
         width: 100%;
     }
-    .body_main_flex {
+    .main_flex {
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
     }
-    .body_main_flex .links_card {
+    .main_flex .links_card {
         width:33%;
         box-sizing: border-box;
     }
@@ -356,7 +360,7 @@ ul{
     .global-container {
         padding: 0;
     }
-    /*Règles Bandeau Navigation Mobile*/
+/*Règles Bandeau Navigation Mobile*/
     .header_nav {
         flex-direction: column;
         align-items: center;
@@ -427,29 +431,29 @@ ul{
         box-sizing: border-box;
     }
 /*Règles section hébergement et populaire Mobile*/
-   .body_main {
+   .main_row {
             flex-direction: column;
     }
-    .body_main_container_flex {
+    .main_container_flex {
             order:0;
             width:100%;
             border-radius: 0px;
     }
-    .body_main_container_grid {
+    .main_container_grid {
             order:1;
             width: 100%;
             background-color: white;
     }
-    .body_main_grid{
+    .main_grid{
         grid-template-columns:1fr;
         margin: 30px;
     }
 /*Règles Activités Mobile*/
-    .body_alt_container {
+    .main_alt_container {
         display:flex;
         flex-direction: column;
     }
-    .body_alt_img {
+    .main_alt_img {
         width: 100%;
         aspect-ratio: 4/3;
         object-fit: cover;
