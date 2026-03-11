@@ -159,7 +159,10 @@ ul{
 .header_filter_button:hover {
     background-color: #deebff;
 }
-
+.undertitle {
+    font-size: 18px;
+    font-weight: 700;
+}
 .main_p {
     font-size: 16px;
     margin-bottom: 35px;
