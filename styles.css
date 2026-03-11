@@ -155,7 +155,6 @@ ul{
     border: solid 2px #d9d9d9;
     padding: 10px 20px 10px 20px;
     background-color: white;
-    transition: background-color 0.5s;
 }
 .header_filter_button:hover {
     background-color: #deebff;
@@ -302,7 +301,7 @@ ul{
     margin: 0;
 }
 /*Règles Footer*/
-.footer {
+footer {
     display: flex;
     align-items: stretch;
     background-color: #F2F2F2;
@@ -324,7 +323,7 @@ ul{
 }
 
 /*RESPONSIVE*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
 /*Règles Filtres et ses Boutons Tablette*/
     .header_filter {
         display: flex;
@@ -355,7 +354,7 @@ ul{
     }
 }
 /*Mobile <768px et >320px */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767.98px) {
 
     .global-container {
         padding: 0;
@@ -460,7 +459,7 @@ ul{
         border-radius: 20px 20px 0px 0px ;
     }
 /*Règles Footer Mobile*/
-    .footer {
+    footer {
         flex-direction: column;
         align-items: flex-start;
         margin: 0;
